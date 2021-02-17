@@ -22,18 +22,16 @@
                         <a href="" class="nav__link">Главная</a>
                     </li>
                     <li class="nav__item dropmenu">
-                        <a href="" class="nav__link nav__link--top">Основное меню</a>
+                        <a href="" class="nav__link nav__link--top nav__link--active">Основное меню</a>
                         <div class="nav__list-inner nav__list-inner--1">
                             <ul class="nav__list-second nav__list-second--arrow">
                                 <li class="nav__item"><a class="nav__link" href="">Заказать вёрстку</a></li>
                                 <li class="nav__item"><a class="nav__link" href="">Отправить макет на проверку</a></li>
                                 <li class="nav__item"><a class="nav__link" href="">Хочу работать у вас</a></li>
                                 <li class="nav__item dropmenu">
-                                    <a class="nav__link nav__link--right" href="">Есть предложение по работе с кл...</a>
+                                    <a class="nav__link nav__link--right nav__link--active" href="">Есть предложение по работе с кл...</a>
                                     <div class="nav__list-inner nav__list-inner--2">
                                         <ul class="nav__list-second nav__list-second--right">
-                                            <li class="nav__item"><a class="nav__link" href="">У меня есть оффер</a></li>
-                                            <li class="nav__item"><a class="nav__link" href="">Сделать партнёром</a></li>
                                             <li class="nav__item"><a class="nav__link" href="">У меня есть оффер</a></li>
                                             <li class="nav__item"><a class="nav__link" href="">Сделать партнёром</a></li>
                                         </ul>
@@ -50,6 +48,11 @@
                     </li>
                 </ul>
             </nav>
+            <button type="button" class="burger">
+                <span class="burger__item"></span>
+                <span class="burger__item"></span>
+                <span class="burger__item"></span>
+            </button>
             <div class="header__contact">
                 <a href="#">
                     <img class="header__contact-pic" src="img/tel_pic.svg" alt="кнопка позвонить">
@@ -58,10 +61,9 @@
                     <a class="header__tel-link" href="#">+1 (321) 222-33-33</a>
                 </span>
             </div>
+            <div class="modal-backdrop fade show"></div>
         </div>
     </header>
-    <div class="alpaca-photo container">
-        <img class="alpaca__pic" src="img/alpaca.png" alt="фото верблюда">
-    </div>
+    
 </body>
 </html>
