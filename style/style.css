@@ -28,12 +28,9 @@ body {
 }
 
 .burger {
-  width: 40px;
-  height: 40px;
   background-color: #131417;
   cursor: pointer;
   border-radius: 4px;
-  padding: 6px;
   align-items: flex-end;
   display: none;
   border: none;
@@ -354,13 +351,8 @@ body {
     opacity: .5;
 }
 
-.header__contact {
-    margin: 0 auto;
-}
-
 .burger {
     display: block;
-    position: absolute;
     right: 22px;
 }
 
@@ -372,9 +364,17 @@ body {
 
 @media (max-width: 374px) {
     .header__contact {
-        display: none;
+        margin-left: auto;
     }
+    
     .header__contact-pic {
         display: block;
+        margin-right: 20px;
     }
+
+    .header__tel {
+        display: none;
+    }
+
+    
 }
