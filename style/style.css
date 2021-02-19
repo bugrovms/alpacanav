@@ -34,6 +34,8 @@ body {
   align-items: flex-end;
   display: none;
   border: none;
+  padding: 10px;
+  outline: none;
 }
 
 .burger__item {
@@ -263,14 +265,19 @@ body {
     transition: opacity .15s linear;
 }
 
+ .modal-backdrop {
+      display: block;
+      z-index: 0;
+  }
+
 @media (max-width: 992px) {
   .nav {
-      position: fixed;
-      right: 0;
-      top: 80px;
-      bottom: 0;
-      background-color: #131417;
-        width: 374px;
+    position: fixed;
+    right: 0;
+    top: 80px;
+    bottom: 0;
+    background-color: #131417;
+    width: 374px;
     overflow-y: auto;
     z-index: 1;
   }
@@ -308,9 +315,14 @@ body {
     padding: 0;
   }
 
+  .nav__list--active{
+    display: block;
+}
+
   .nav__link {
       padding: 20px 18px;
       background-color: #252830;
+      border-bottom: 1px solid #131417;
   }
 
   .nav__list-second > .nav__item:not(:last-child) {
@@ -318,11 +330,11 @@ body {
   }
 
   .nav__link--right:after, .nav__link--top:after {
-      position: static;
-      border: 5px solid transparent;
-      border-top-color: #F2994A;
-        border-bottom: none;
-        margin-left: 5px;
+    position: static;
+    border: 5px solid transparent;
+    border-top-color: #F2994A;
+    border-bottom: none;
+    margin-left: 5px;
   }
 
   .nav__link--right, .nav__link--top {
@@ -342,22 +354,20 @@ body {
     display: block;
   }
 
-  .modal-backdrop {
-      display: block;
-      z-index: 0;
-  }
-
-  .modal-backdrop--show {
-    opacity: .5;
-}
-
 .burger {
     display: block;
-    right: 22px;
 }
 
 .nav__list-second {
     display: none;
+}
+
+.nav__list {
+    display: none;
+}
+
+.nav__list--active{
+  display: block;
 }
 
 }
@@ -365,11 +375,12 @@ body {
 @media (max-width: 374px) {
     .header__contact {
         margin-left: auto;
+        margin-right: 10px;
     }
     
     .header__contact-pic {
         display: block;
-        margin-right: 20px;
+        margin-right: 0;
     }
 
     .header__tel {

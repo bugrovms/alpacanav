@@ -18,21 +18,21 @@
                 </a>
             </div>
             <nav class="nav">
-                <ul class="nav__list">
+                <ul class="nav__list js-nav">
                     <li class="nav__item">
                         <a href="" class="nav__link">Главная</a>
                     </li>
                     <li class="nav__item dropmenu">
                         <a href="" class="nav__link nav__link--top nav__link--active">Основное меню</a>
                         <div class="nav__list-inner nav__list-inner--1">
-                            <ul class="nav__list-second nav__list-second--arrow nav__list-second--drop">
+                            <ul class="nav__list-second nav__list-second--arrow">
                                 <li class="nav__item"><a class="nav__link" href="">Заказать вёрстку</a></li>
                                 <li class="nav__item"><a class="nav__link" href="">Отправить макет на проверку</a></li>
                                 <li class="nav__item"><a class="nav__link" href="">Хочу работать у вас</a></li>
                                 <li class="nav__item dropmenu">
                                     <a class="nav__link nav__link--right nav__link--active" href="">Есть предложение по работе с кл...</a>
                                     <div class="nav__list-inner nav__list-inner--2">
-                                        <ul class="nav__list-second nav__list-second--right nav__list-second--drop">
+                                        <ul class="nav__list-second nav__list-second--right">
                                             <li class="nav__item"><a class="nav__link" href="">У меня есть оффер</a></li>
                                             <li class="nav__item"><a class="nav__link" href="">Сделать партнёром</a></li>
                                         </ul>
@@ -57,13 +57,21 @@
                     <a class="header__tel-link" href="#">+1 (321) 222-33-33</a>
                 </span>
             </div>
-            <button type="button" class="burger">
+            <button type="button" class="burger js-burger">
                 <span class="burger__item"></span>
                 <span class="burger__item"></span>
                 <span class="burger__item"></span>
             </button>
         </div>
     </header>
-    
+    <script>
+        let burger = document.querySelector(".js-burger");
+        let nav = document.querySelector(".js-nav");
+
+        burger.addEventListener("click", () => {
+        burger.classList.toggle("_active");
+        nav.classList.toggle("nav__list--active");
+        });
+    </script>
 </body>
 </html>
