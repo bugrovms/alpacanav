@@ -372,6 +372,22 @@ body {
 
 }
 
+@media (max-width: 576px) {
+    .header__tel {
+        display: none;
+    }
+
+    .header__contact {
+        margin-left: auto;
+        margin-right: 10px;
+    }
+
+    .header__contact-pic {
+        display: block;
+        margin-right: 0;
+    }
+}
+
 @media (max-width: 374px) {
     .header__contact {
         margin-left: auto;
